@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+
+
+
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imviBrg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textBarange"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Namabrg"
+            android:layout_width="120dp" />
+
+        <TextView
+            android:id="@+id/textQty"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="QTY"
+            android:layout_width="50dp" />
+
+        <TextView
+            android:id="@+id/textHrg"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Harga"
+            android:layout_width="90dp" />
+
+    </LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/imviBrg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|top"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_cart" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/textBarange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nama"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textBarange"
+            android:layout_gravity="center"
+            android:text="QTY"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textHrg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textQty"
+            android:layout_gravity="center"
+            android:text="Harga"
+            android:textColor="#E90"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/ic_trash"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

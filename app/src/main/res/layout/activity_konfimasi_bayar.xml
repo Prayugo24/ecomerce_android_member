@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/namarek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Nama Pemegang Rekening"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/nomorek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Nomor Rekening"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/jumlahrek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Jumlah yang Dibayarkan"
+        android:inputType="number"
+        android:maxLength="8" />
+
+    <Button
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/buttonkon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Konfirmasi" />
+</LinearLayout>

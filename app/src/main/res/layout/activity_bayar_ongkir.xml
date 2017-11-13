@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="Pilih Agen Pengiriman \t"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bayar_agenKet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="JNE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/bayar_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/bayar_rbJNE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="jne" />
+
+            <RadioButton
+                android:id="@+id/bayar_rbtiki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tiki" />
+
+            <RadioButton
+                android:id="@+id/bayar_rbPOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pos" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wahana" />
+
+
+        </RadioGroup>
+
+        <ListView
+            android:id="@+id/bayar_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+</RelativeLayout>

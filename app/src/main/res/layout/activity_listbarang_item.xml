@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/barang_gambar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|top"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_cart" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/textBarange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nama"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textBarange"
+            android:layout_gravity="center"
+            android:text="Harga"
+            android:textColor="#E91E63"
+            android:textSize="@dimen/gv_text_size" />
+
+        <TextView
+            android:id="@+id/barang_diskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textQty"
+            android:layout_gravity="center"
+            android:text="Diskon"
+            android:textColor="#E91E63"
+            android:textSize="@dimen/gv_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/barang_persen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_circle"
+            android:gravity="center"
+            android:text="10%"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/barang_stok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/barang_diskon"
+            android:layout_gravity="center"
+            android:text="Stok"
+            android:textColor="#E90"
+            android:textSize="@dimen/gv_text_size" />
+
+        <TextView
+            android:id="@+id/jum_jual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/barang_stok"
+            android:layout_gravity="center"
+            android:text="Terjual"
+            android:textSize="@dimen/gv_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/jum_jual"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/beli" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="86dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pemilik"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editNM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:padding="5dp" />
+-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Nama Toko"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editNamaToko"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Email"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNM"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="No. Telp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/editTelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editMail"
+            android:padding="5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Pin BBM"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/editpinbbm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editMail"
+            android:padding="5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="ID Line"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/editLineID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editMail"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Password"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTelp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Konfirmasi Password"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editKPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPw"
+            android:padding="5dp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Alamat"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTelp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Keterangan"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editKet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTelp"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="No Rekening"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editNorek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editKet"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp" />
+
+
+        <!--<Button
+            android:id="@+id/bReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editKPw"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="54dp"
+            android:background="#ee0000"
+            android:text="Registrasi"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editKPw"
+            android:layout_below="@+id/editKPw"
+            android:text=" "
+            android:visibility="visible" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/owner_telp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:src="@drawable/icon_phone" />
+
+            <ImageView
+                android:id="@+id/owner_sms"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:src="@drawable/icon_sms" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/owner_browser"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_browser" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/owner_wa"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:src="@drawable/icon_wa"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/owner_bbm"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:src="@drawable/icon_bbm"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/owner_line"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:adjustViewBounds="true"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_line"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

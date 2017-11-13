@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/detail_gambar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/detail_btnSimpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_download" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Nama Barang"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_no">
+
+                <TableRow
+                    android:visibility="gone"
+                    android:padding="0dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        style="@style/detailBrgKiri"
+                        android:layout_weight="1"
+                        android:text="Rating" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/detail_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:text="3"
+                            android:textSize="17sp" />
+
+                        <RatingBar
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_star" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:padding="0dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        style="@style/detailBrgKiri"
+                        android:layout_weight="1"
+                        android:text="Harga" />
+
+                    <TextView
+                        android:id="@+id/detail_harga"
+                        style="@style/detailBrgKanan"
+                        android:layout_weight="1"
+                        android:text="Rp. 1.000.000" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/detailbrg_tableRow"
+                    android:padding="0dp"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <TextView
+                        style="@style/detailBrgKiri"
+                        android:layout_weight="1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_hargaDiskon"
+                        style="@style/detailBrgKanan"
+                        android:layout_weight="1"
+                        android:text="Rp. 1.000.000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="0dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        style="@style/detailBrgKiri"
+                        android:layout_weight="1"
+                        android:text="Berat" />
+
+                    <TextView
+                        android:id="@+id/detail_berat"
+                        style="@style/detailBrgKanan"
+                        android:layout_weight="1"
+                        android:text="100 KG" />
+                </TableRow>
+
+                <TableRow
+                    android:padding="0dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        style="@style/detailBrgKiri"
+                        android:layout_weight="1"
+                        android:text="Stok" />
+
+                    <TextView
+                        android:id="@+id/detail_stok"
+                        style="@style/detailBrgKanan"
+                        android:layout_weight="1"
+                        android:text="00" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="0dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        style="@style/detailBrgKiri"
+                        android:layout_weight="1"
+                        android:text="Terjual" />
+
+                    <TextView
+                        android:id="@+id/jum_jual"
+                        style="@style/detailBrgKanan"
+                        android:layout_weight="1"
+                        android:text="0" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="Deskripsi"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="testing" />
+
+            <EditText
+                android:id="@+id/editQty"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonBeli"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:focusable="true"
+                android:gravity="center"
+                android:hint="QTY"
+                android:inputType="number"
+                android:maxLength="3">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editKet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editQty"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Keterangan"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/buttonBeli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary"
+                android:text="Beli"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/detail_fabKontak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            fab:menu_animationDelayPerItem="50"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_colorNormal="@color/colorPrimary"
+            fab:menu_colorPressed="@color/colorAccent"
+            fab:menu_fab_hide_animation="@anim/hide_to_bottom"
+            fab:menu_fab_label="Kontak"
+            fab:menu_fab_show_animation="@anim/show_from_bottom"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/ic_call"
+            fab:menu_labels_colorNormal="@color/colorAccent"
+            fab:menu_labels_colorPressed="#444444"
+            fab:menu_labels_colorRipple="#66FFFFFF"
+            fab:menu_labels_cornerRadius="3dp"
+            fab:menu_labels_ellipsize="none"
+            fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_padding="10dp"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="false"
+            fab:menu_labels_textColor="#FFFFFF"
+            fab:menu_labels_textSize="14sp"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#66000000"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="3dp"
+            fab:menu_showShadow="true">
+            <!--fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_colorNormal="@color/colorPrimary"
+            fab:menu_colorPressed="@color/colorAccent"
+            fab:menu_colorRipple="#99FFFFFF"-->
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/detail_fabBBM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bbm"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorAccent"
+                fab:fab_label="BBM"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/detail_fabLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_line2"
+                android:visibility="gone"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorAccent"
+                fab:fab_label="LINE"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/detail_fabWA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wa"
+                android:visibility="gone"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorAccent"
+                fab:fab_label="WhatsApp"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/detail_fabSMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sms2"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorAccent"
+                fab:fab_label="SMS"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/detail_fabTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_call"
+                fab:fab_colorNormal="@color/colorPrimary"
+                fab:fab_colorPressed="@color/colorAccent"
+                fab:fab_label="TELEPHONE"
+                fab:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/detail_fabUlasan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_colorNormal="@color/colorPrimary"
+            fab:menu_colorPressed="@color/colorAccent"
+            fab:menu_colorRipple="#99FFFFFF"
+            fab:menu_fab_hide_animation="@anim/hide_to_bottom"
+            fab:menu_fab_label="Kontak"
+            fab:menu_fab_show_animation="@anim/show_from_bottom"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/ic_ulasan"
+            fab:menu_labels_position="right"
+            fab:menu_openDirection="up"
+            fab:menu_shadowColor="#66000000"
+            fab:menu_shadowRadius="4dp"
+            fab:menu_shadowXOffset="1dp"
+            fab:menu_shadowYOffset="3dp"
+            fab:menu_showShadow="true"></com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/judulKomentar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:hint="Judul Ulasan Anda"></EditText>
+
+    <EditText
+        android:id="@+id/isiKomentar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/kirimKomentar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/TextView01"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Isi Komentar Anda"
+        android:inputType="textMultiLine" />
+
+
+    <RatingBar
+        android:visibility="gone"
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5" />
+
+    <Button
+        android:id="@+id/kirimKomentar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Kirim Komentar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

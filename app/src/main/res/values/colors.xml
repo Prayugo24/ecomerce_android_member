@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--warna merah-->
+    <!--<color name="colorPrimary">#e4232b</color>
+    <color name="colorPrimaryDark">#b90f17</color>
+    <color name="colorAccent">#fdc5c8</color>
+    <color name="colorBackground">#930209</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="primary_dark_material_dark_2">#9c020a</color>
+    <color name="primary_material_dark_1">#94040b</color>
+    <color name="primary_material_dark_2">#750208</color>
+    <color name="primary_material_dark_3">#490206</color>
+    <color name="warna_ket">#ee6a71</color>
+    <color name="border">#ECEFF1</color>
+
+    <color name="fab_color">#df2931</color>
+    <color name="price_color">#E91E63</color>-->
+
+
+    <!--Warna Biru-->
+    <!--<color name="colorPrimary">#3b44ba</color>-->
+    <!--<color name="colorPrimaryDark">#141fac</color>-->
+    <!--<color name="colorAccent">#b4b7e2</color>-->
+    <!--<color name="colorBackground">#091386</color>-->
+
+    <!--<color name="black_20">#33000000</color>-->
+    <!--<color name="primary_dark_material_dark_2">#0c158a</color>-->
+    <!--<color name="primary_material_dark_1">#1721a1</color>-->
+    <!--<color name="primary_material_dark_2">#050c69</color>-->
+    <!--<color name="primary_material_dark_3">#02073e</color>-->
+    <!--<color name="warna_ket">#6c72c5</color>-->
+    <!--<color name="border">#f1f3f5</color>-->
+
+    <!--<color name="fab_color">#6c72c5</color>-->
+    <!--<color name="price_color">#E91E63</color>-->
+
+    <!--orange-->
+    <color name="colorPrimary">#ff6802</color>
+    <color name="colorPrimaryDark">#c85202</color>
+    <color name="colorAccent">#fcaa57</color>
+    <color name="colorBackground">#9b3f02</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="primary_dark_material_dark_2">#a54302</color>
+    <color name="primary_material_dark_1">#ba5818</color>
+    <color name="primary_material_dark_2">#783002</color>
+    <color name="primary_material_dark_3">#4d2002</color>
+    <color name="warna_ket">#ffa465</color>
+    <color name="border">#fff7e8</color>
+
+    <color name="fab_color">#f89958</color>
+    <color name="price_color">#E91E63</color>-->
+
+    <!--purple-->
+    <!--<color name="colorPrimary">#9f1ac7</color>
+    <color name="colorPrimaryDark">#8d06b2</color>
+    <color name="colorAccent">#c363de</color>
+    <color name="colorBackground">#690585</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="primary_dark_material_dark_2">#6e068b</color>
+    <color name="primary_material_dark_1">#8416a4</color>
+    <color name="primary_material_dark_2">#56056e</color>
+    <color name="primary_material_dark_3">#400352</color>
+    <color name="warna_ket">#d893ec</color>
+    <color name="border">#f1f3f5</color>
+
+    <color name="fab_color">#af3ed0</color>
+    <color name="price_color">#E91E63</color>-->
+
+    <!--Warna hijau-->
+    <!--<color name="colorPrimary">#3cb144</color>
+    <color name="colorPrimaryDark">#20a028</color>
+    <color name="colorAccent">#8bde91</color>
+    <color name="colorBackground">#0f7e17</color>
+
+    <color name="black_20">#33000000</color>
+    <color name="primary_dark_material_dark_2">#128119</color>
+    <color name="primary_material_dark_1">#239c2b</color>
+    <color name="primary_material_dark_2">#026308</color>
+    <color name="primary_material_dark_3">#024106</color>
+    <color name="warna_ket">#bbefbf</color>
+    <color name="border">#f1ffef</color>
+
+    <color name="fab_color">#60ca67</color>
+    <color name="price_color">#E91E63</color>-->
+
+    <!--magenta-->
+
+    <!--<color name="colorPrimary">#e73e97</color>-->
+    <!--<color name="colorPrimaryDark">#e01c83</color>-->
+    <!--<color name="colorAccent">#f690c5</color>-->
+    <!--<color name="colorBackground">#cf026e</color>-->
+
+    <!--<color name="black_20">#33000000</color>-->
+    <!--<color name="primary_dark_material_dark_2">#d80273</color>-->
+    <!--<color name="primary_material_dark_1">#d33287</color>-->
+    <!--<color name="primary_material_dark_2">#a20256</color>-->
+    <!--<color name="primary_material_dark_3">#800244</color>-->
+    <!--<color name="warna_ket">#f595c7</color>-->
+    <!--<color name="warna_det">#ffeaf4</color>-->
+    <!--<color name="border">#ECEFF1</color>-->
+
+    <!--<color name="fab_color">#ee65ad</color>-->
+    <!--<color name="price_color">#E91E63</color>-->
+
+</resources>

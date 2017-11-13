@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="primary_dark_material_darkss" parent="android:Theme.Material" >
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorPrimary">#0b1172</item>
+    </style>
+
+    <style name="MaterialDark" parent="android:Theme.Material" >
+        <item name="android:colorPrimary">@color/primary_material_dark_2</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_material_dark_2</item>
+    </style>
+
+    <style name="MaterialEdit" parent="android:Theme.Material" >
+        <item name="android:colorPrimary">@color/primary_material_dark_3</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_material_dark_2</item>
+
+    </style>
+
+</resources>

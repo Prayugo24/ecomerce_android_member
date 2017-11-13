@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mulai Berkarya</string>
+    <string name="url_app"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="spinner_provinsi"></string>
+    <string name="spinner_kabkot"></string>
+    <string name="spinner_kecamatan"></string>
+
+    <!--trial-->
+    <string name="trial_text">Anda sedang menggunakan versi trial,untuk mendapatkan versi premium silahkan mendaftar di cafeimers.com, Terima kasih !!</string>
+
+</resources>
